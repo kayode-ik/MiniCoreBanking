@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+      <!-- Custom css -->
+      <link rel="stylesheet" href="dashboard.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="dashboard.js"></script>
+
+</head>
+
+<body class="home">
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation" style="min-height: 100vh;">
+                <div class="logo">
+                    <h3 style="color: white;">BlueBank</h3>
+                </div>
+                <div class="navi">
+                    <ul>
+                        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
+                        <li><a href="transfer.html"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Transfer</span></a></li>
+                        <li><a href="myaccount.html"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Account</span></a></li>
+                        <li><a href="settings.html"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Setting</span></a></li>
+                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">LogOut</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-11 display-table-cell v-align">
+                <!--<button type="button" class="slide-toggle">Slide Toggle</button> -->
+                <div class="row">
+                    <header>
+                        <div class="col-md-7">
+                            <nav class="navbar-default pull-left">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                            </nav>
+                            <div class="search hidden-xs hidden-sm">
+                                <input type="text" placeholder="Search" id="search">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="header-rightside">
+                                <ul class="list-inline header-top pull-right">
+                                    <li class="hidden-xs"><a href="#" class="add-project" data-toggle="modal" data-target="#add_project">Add Account</a></li>
+                                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                    <li>
+                                        <a href="#" class="icon-info">
+                                            <i class="fa fa-bell" aria-hidden="true"></i>
+                                            <span class="label label-primary">3</span>
+                                        </a>
+                                    </li>
+                                    <!-- <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="http://jskrishna.com/work/merkury/images/user-pic.jpg" alt="user">
+                                            <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="navbar-content">
+                                                    <span>JS Krishna</span>
+                                                    <p class="text-muted small">
+                                                        me@jskrishna.com
+                                                    </p>
+                                                    <div class="divider">
+                                                    </div>
+                                                    <a href="#" class="view btn-sm active">View Profile</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div class="user-dashboard">
+                    <h1>Hello, USER <span><br>
+                    <h4>welcome to BlueBank</h4></span></h1>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-12 gutter">
+
+                            <div class="sales">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Available Balance</h5>
+                                        <p class="card-text">Account #: 1234567890</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <h1># 50000</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-12 gutter">
+
+                            <div class="sales report">
+                                <h2 style="margin-bottom: 20px;">All Last Transactions</h2>
+                                <div class="table">
+                                    <table>
+                                        <tr>
+                                          <th>Date</th>
+                                          <th>Account Number</th>
+                                          <th>Amount</th>
+                                        </tr>
+                                        <tr>
+                                          <td>xx/xx/xxxx</td>
+                                          <td>xxxxxxxxxx</td>
+                                          <td>xxxx</td>
+                                        </tr>
+                                        <tr>
+                                          <td>xx/xx/xxxx</td>
+                                          <td>xxxxxxxxxx</td>
+                                          <td>xxxxx</td>
+                                        </tr>
+                                        <tr>
+                                          <td>xx/xx/xxxx</td>
+                                          <td>xxxxxxxxxx</td>
+                                          <td>xxxxxxxx</td>
+                                        </tr>
+                                      </table>
+                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-5=4 col-xs-12 gutter">
+
+                            <div class="sales" style="margin-top: 20px;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Credit Card Balance</h5>
+                                        <p class="card-text">XXXXXXXXXXXX 123</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <h1># 50000</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-12 gutter">
+
+                            <div class="saless report" style="margin-top: 20px;">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shop With Us</h5>
+                                    <p class="card-text">Buy Products from our cart and Get cash back up to #1000</p>
+                                    <img src="data:image/jpeg;base64,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" alt="">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Modal -->
+    <div id="add_project" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header login-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Add Project</h4>
+                </div>
+                <div class="modal-body">
+                            <input type="text" placeholder="Project Title" name="name">
+                            <input type="text" placeholder="Post of Post" name="mail">
+                            <input type="text" placeholder="Author" name="passsword">
+                            <textarea placeholder="Desicrption"></textarea>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="cancel" data-dismiss="modal">Close</button>
+                    <button type="button" class="add-project" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <script src="dashboard.js"></script> -->
+
+</body>
+
+</html>

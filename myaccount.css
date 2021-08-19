@@ -1,0 +1,13 @@
+.text-details {
+
+        padding: 10px 20px;
+        margin: 10px;
+}
+.sales1 {
+    background: #0006cc9c none repeat scroll 0 0;
+    border: 1px solid #d4d9e3;
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+    color: white;
+}
